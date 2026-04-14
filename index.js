@@ -31,7 +31,6 @@ app.get('/books', function(req, res) {
     return res.json({ books })
 });
 
-// Dynamic Path
 app.get('/books/:bookId', function(req, res) {
     const id = req.params.bookId;
     const book = books.find((e) => e.id === Number(id));

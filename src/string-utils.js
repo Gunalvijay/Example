@@ -13,3 +13,8 @@ export function slugify(str) {
 export function countWords(str) {
   return str.trim().split(/\s+/).length;
 }
+
+export function capitalise(str) {
+  if (!str) return "";
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}

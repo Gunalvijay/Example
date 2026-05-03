@@ -9,3 +9,7 @@ export function truncate(str, n, suffix = "...") {
 export function slugify(str) {
   return str.toLowerCase().replace(/\s+/g, "-");
 }
+
+export function countWords(str) {
+  return str.trim().split(/\s+/).length;
+}
